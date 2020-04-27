@@ -30,8 +30,8 @@
   "scripts": {
     "lint": "eslint --cache --ext .js,.ts src/",
     "build": "tsc -b",
-    "bundle": "ts-node -P ../../tsconfig.json ../../scripts/bundle.ts umd,esm,system jit",
-    "dev": "tsc -b -w"
+    "bundle": "ts-node -P ../../tsconfig.json ../../scripts/bundle.ts umd,esm,system i18n",
+    "dev": "tsc -b -w --preserveWatchOutput"
   },
   "publishConfig": {
     "access": "public"
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
-    "tslib": "^1.10.0",
-    "typescript": "^3.7.4"
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
   }
 }

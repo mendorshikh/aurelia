@@ -27,6 +27,7 @@
     "@aurelia/runtime": "0.6.0",
     "@aurelia/runtime-html": "0.6.0",
     "@aurelia/runtime-html-browser": "0.6.0",
+    "@aurelia/validation": "0.6.0",
     "i18next-intervalplural-postprocessor": "^1.0.0",
     "relative-time-format": "^1.0.0",
     "i18next-fetch-backend": "^2.2.0"
@@ -41,7 +42,7 @@
     "rimraf": "^3.0.0",
     "start-server-and-test": "^1.10.6",
     "ts-loader": "^6.2.1",
-    "typescript": "^3.7.4",
+    "typescript": "^3.8.3",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",

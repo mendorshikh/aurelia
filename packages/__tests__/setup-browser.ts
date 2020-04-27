@@ -6,9 +6,6 @@ import {
   JitHtmlBrowserConfiguration
 } from '@aurelia/jit-html-browser';
 import {
-  BrowserScheduler
-} from '@aurelia/runtime-html-browser';
-import {
   Reporter,
   LogLevel,
 } from '@aurelia/kernel';
@@ -19,7 +16,6 @@ function createBrowserTestContext(): HTMLTestContext {
   return HTMLTestContext.create(
     JitHtmlBrowserConfiguration,
     window,
-    BrowserScheduler,
     UIEvent,
     Event,
     CustomEvent,
@@ -54,7 +50,11 @@ importAll(require.context('./3-runtime-html/', true, /\.spec\.js$/));
 importAll(require.context('./4-jit/', true, /\.spec\.js$/));
 importAll(require.context('./5-jit-html/', true, /\.spec\.js$/));
 
+importAll(require.context('./web-components/', true, /\.spec\.js$/));
 importAll(require.context('./fetch-client/', true, /\.spec\.js$/));
 importAll(require.context('./i18n/', true, /\.spec\.js$/));
 importAll(require.context('./integration/', true, /\.spec\.js$/));
 importAll(require.context('./router/', true, /\.spec\.js$/));
+importAll(require.context('./validation/', true, /\.spec\.js$/));
+importAll(require.context('./validation-html/', true, /\.spec\.js$/));
+importAll(require.context('./validation-i18n/', true, /\.spec\.js$/));

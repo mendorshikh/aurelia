@@ -12,6 +12,7 @@ export {
   Key,
   lazy,
   optional,
+  ignore,
   RegisterSelf,
   Registration,
   ResolveCallback,
@@ -22,6 +23,11 @@ export {
   InstanceProvider,
   Resolved,
   Transformer,
+  newInstanceForScope,
+  newInstanceOf,
+  DefaultContainerConfiguration,
+  DefaultResolver,
+  IContainerConfiguration
 } from './di';
 export {
   Class,
@@ -63,7 +69,7 @@ export {
 export {
   metadata,
   Metadata,
-} from './metadata';
+} from '@aurelia/metadata';
 export {
   IConsoleLike,
   ColorOptions,
@@ -83,9 +89,6 @@ export {
 export {
   relativeToFile,
   join,
-  buildQueryString,
-  parseQueryString,
-  IQueryParams
 } from './path';
 export { PLATFORM } from './platform';
 export {
