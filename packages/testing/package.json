@@ -44,9 +44,9 @@
     "@aurelia/scheduler": "0.7.0"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
-    "jsdom": "^15.2.1",
+    "@types/mocha": "^7.0.2",
+    "jsdom": "^16.2.2",
     "mocha": "~6.1.4",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
   }
 }
